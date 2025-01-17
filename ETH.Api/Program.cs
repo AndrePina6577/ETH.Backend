@@ -1,8 +1,6 @@
 using System;
-using System.Globalization;
 using ETH.Api.Extensions;
 using ETH.Api.Options;
-using FluentValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;

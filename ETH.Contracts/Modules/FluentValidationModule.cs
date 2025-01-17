@@ -1,10 +1,8 @@
-﻿using System;
-using System.Linq;
-using Autofac;
+﻿using Autofac;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
-namespace ETH.Api.Modules;
+namespace ETH.Contracts.Modules;
 
 /// <summary>
 /// The fluent validation autofac module.

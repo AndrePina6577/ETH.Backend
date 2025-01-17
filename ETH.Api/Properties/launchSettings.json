@@ -17,7 +17,8 @@
         "ASPNETCORE_ENVIRONMENT": "Development",
         "FrontendLink": "http://localhost:3000",
         "TOKEN_KEY": "MYR4NFJJ83qwviJJ6u6kiKzcYmyBQS93",
-        "TOKEN_ISSUER": "*/TeachersHub123*"
+        "TOKEN_ISSUER": "*/TeachersHub123*",
+        "ELASTICSEARCH_LINK": "http://localhost:9200"
       }
     },
     "http": {

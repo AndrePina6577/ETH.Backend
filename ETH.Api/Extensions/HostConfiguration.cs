@@ -2,8 +2,10 @@
 using System.Reflection;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using ETH.Api.Modules;
 using ETH.Api.Options;
+using ETH.Application;
+using ETH.Contracts;
+using ETH.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyModel;
@@ -46,7 +48,10 @@ public static class HostConfiguration
 
             build.ConfigureAutomapper(applicationAssemblies);
 
-            build.RegisterModule<FluentValidationModule>();
+            build
+                .AddApplication()
+                .AddContracts()
+                .AddInfrastructure();
         });
 
         return builder;
